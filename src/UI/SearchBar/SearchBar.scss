@@ -1,0 +1,19 @@
+.SearchBar {
+  display: flex;
+
+  & form {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .SearchBar {
+    margin: 0 auto;
+
+    & form {
+      margin-left: 10px;
+    }
+  }
+}

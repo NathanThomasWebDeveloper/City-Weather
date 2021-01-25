@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import SideBar from "./Containers/SideBar/SideBar";
+import Header from "./Containers/Header/Header";
+import Body from "./Containers/Body/Body";
+import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const locations = [{
+        city: "Madrid",
+        countryISO: "ES"
+    },
+        {
+            city: "Oradea",
+            countryISO: "RO"
+        },
+        {
+            city: "San Francisco",
+            countryISO: "US"
+        },
+        {
+            city: "Rome",
+            countryISO: "IT"
+        },
+        {
+            city: "Rome",
+            countryISO: "US"
+        }
+    ]
+
+    return (
+        <div className="App">
+            <Header/>
+            <SideBar locations={locations}/>
+            <Body/>
+        </div>
+    );
+};
 
 export default App;

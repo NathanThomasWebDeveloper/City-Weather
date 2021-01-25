@@ -1,0 +1,20 @@
+
+.Header {
+  padding: 40px;
+  background-color: #4769f1;
+  color: white;
+  grid-area: header;
+
+  &__title {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .Header {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+}
