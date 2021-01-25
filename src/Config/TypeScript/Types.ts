@@ -1,8 +1,10 @@
 export type TcountryISO = string;
+export type Ttemperature_unit = "celsius" | "fahrenheit" | "kelvin";
+export type Tlength_unit = "km" | "mile";
 export type Tstate = {
     error: string,
-    temperature_unit: "celsius" | "fahrenheit" | "kelvin",
-    length_unit: "km" | "mile",
+    temperature_unit: Ttemperature_unit,
+    length_unit: Tlength_unit,
     isLoading: boolean,
     error_message: string,
     weatherData: {
