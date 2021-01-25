@@ -2,6 +2,8 @@ import {IS_LOADING, FETCH_WEATHER_DATA, SET_TEMPERATURE_UNIT, SET_LENGTH_UNIT, S
 import {client, getCityByName} from '../Apollo/Apollo';
 import {toName} from "../Utils/TranslateCountryISO";
 import {TcountryISO} from "../Config/TypeScript/Types";
+import {createAction} from "@reduxjs/toolkit";
+
 
 export const fetchData = ({city, country}: { city: string, country?: TcountryISO }) => (dispatch: any) => {
     const now = new Date();
@@ -46,17 +48,6 @@ export const fetchData = ({city, country}: { city: string, country?: TcountryISO
         })
 }
 
-export const showError = (msg: string) => ({
-    type: SHOW_ERROR_MESSAGE,
-    payload: msg
-})
-
-export const setTemperatureUnit = (unit: string) => ({
-    type: SET_TEMPERATURE_UNIT,
-    payload: unit
-})
-
-export const setLengthUnit = (unit: string) => ({
-    type: SET_LENGTH_UNIT,
-    payload: unit
-})
+export const showError = createAction<string>(SHOW_ERROR_MESSAGE)
+export const setTemperatureUnit = createAction<string>(SET_TEMPERATURE_UNIT)
+export const setLengthUnit = createAction<string>(SET_LENGTH_UNIT)
