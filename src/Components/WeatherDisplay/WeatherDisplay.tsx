@@ -21,7 +21,7 @@ const WeatherDisplay = () => {
         <div className={`WeatherDisplay ${+(city === null) && "WeatherDisplay--inactive"}`}>
             <div className="WeatherDisplay__Summary">
                 <h2 className="WeatherDisplay__Summary__Title">{!isLoading ? `${city}, ${country}` : "Loading...."}</h2>
-                <p>{date !== null && date.toDateString()}</p>
+                <p>{date !== null && date}</p>
             </div>
             <div className="WeatherDisplay__TagLine">
                 <h1>{summary.description != null && summary.description.toUpperCase()}</h1>
