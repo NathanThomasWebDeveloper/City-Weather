@@ -1,4 +1,4 @@
-# An Animated Interface to Display Weather in a Given City
+# An Animated Interface to Display the Weather in a Given City
 
 Technologies used:
 
