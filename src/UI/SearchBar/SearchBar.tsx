@@ -8,6 +8,7 @@ interface ISearchBarProps {
     buttonText?: string
     isLoading?: boolean;
 }
+
 const SearchBar = ({onSubmit, isLoading = false, buttonText}: ISearchBarProps) => {
 
     const [input, setInput] = useState("");
