@@ -2,9 +2,4 @@
 
 Technologies used:
 
-React
-TypeScript
-Redux
-GraphQL
-SCSS
-React-spring for animation
+React, TypeScript, Redux, GraphQL, SCSS and React-spring for animation.
