@@ -1,5 +1,22 @@
-# An Animated Interface to Display the Weather in a Given City
+# Weather in a Given City
 
-Technologies used:
+## Example
 
-React, TypeScript, Redux, GraphQL, SCSS and React-spring for animation.
+https://weather-app-ntwebdev.herokuapp.com/
+
+## Motivation
+
+Coding challenge to receive data from a weather API and display it.
+
+## Stack
+
+- React
+- TypeScript
+- Redux DevTools for state management
+- GraphQL for API calls
+- SCSS with BEM (block element modifier) methodology for styling
+- React-spring for animation
+
+## Installation
+
+run npm install
